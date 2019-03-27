@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Course Registration</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_course_wait_list">Course Wait List</string>
+    <string name="title_activity_student_wait_list">Student Wait List</string>
+    <string name="sort_by">Sort by</string>
+
+    <!-- strings for dialog layout -->
+    <string name="lbl_new_student_title">New Student</string>
+    <string name="lbl_edit_student_title">Edit Student</string>
+    <string name="lbl_new_course_title">New Course</string>
+    <string name="lbl_edit_course_title">Edit Course</string>
+    <string name="dialog_course">Course Name</string>
+    <string name="dialog_studentFirstName">First Name</string>
+    <string name="dialog_studentLastName">Last Name</string>
+
+    <!-- strings for content layout -->
+    <string name="empty_waitList">No Students on Wait List!</string>
+    <string name="empty_CourseWaitList">No Courses on Wait List!</string>
+
+    <!-- strings for wait_row layout -->
+    <string name="waitListRowName">Name:</string>
+    <string name="waitListRowPriority">Priority:</string>
+    <string name="waitListRowCourse">Course:</string>
+
+    <!-- arrays for dropdown -->
+    <string-array name="priority_dropdown_arrays">
+        <item>Graduate</item>
+        <item>4th year</item>
+        <item>3rd year</item>
+        <item>2nd year</item>
+        <item>1st year</item>
+    </string-array>
+
+    <string-array name="sort_types">
+        <item>Date</item>
+        <item>Name</item>
+        <item>Priority</item>
+    </string-array>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_spacing"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingBottom="@dimen/row_spacing">
+
+    <!-- textView dot on side -->
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dot_height"
+        android:layout_marginTop="@dimen/row_spacing"
+        android:layout_marginEnd="@dimen/dot_margin_right"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/dot_text_size" />
+
+    <!-- textView timestamp at top -->
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/dot"
+        android:textColor="@color/timestamp"
+        android:textSize="@dimen/timestamp" />
+
+    <!-- textView studentName label at middle -->
+    <TextView
+        android:id="@+id/waitListRowLabelStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timestamp"
+        android:layout_toEndOf="@id/dot"
+        android:text="@string/waitListRowName"
+        android:textColor="@color/waitListRow"
+        android:textSize="@dimen/wait_list_text" />
+
+    <!-- textView studentName at middle -->
+    <TextView
+        android:id="@+id/waitListRowStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timestamp"
+        android:layout_marginStart="@dimen/row_spacing"
+        android:layout_toEndOf="@id/waitListRowLabelStudentName"
+        android:textColor="@color/waitListRow"
+        android:textSize="@dimen/wait_list_text" />
+
+    <!-- textView priority label at bottom -->
+    <TextView
+        android:id="@+id/waitListRowLabelPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waitListRowLabelStudentName"
+        android:layout_toEndOf="@id/dot"
+        android:text="@string/waitListRowPriority"
+        android:textColor="@color/waitListRow"
+        android:textSize="@dimen/wait_list_text" />
+
+    <!-- textView priority at bottom -->
+    <TextView
+        android:id="@+id/waitListRowPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waitListRowStudentName"
+        android:layout_marginStart="@dimen/row_spacing"
+        android:layout_toEndOf="@id/waitListRowLabelPriority"
+        android:textColor="@color/waitListRow"
+        android:textSize="@dimen/wait_list_text" />
+
+</RelativeLayout>
